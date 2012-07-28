@@ -9,7 +9,7 @@ OS_BIT=`uname -m`
 KERNEL_VERSION=`uname -rsv`
 
 #These are the distros I can test, don't have others installed
-OS=`egrep -i 'red\ hat|suse|centos|ubuntu|debian' /etc/issue`
+OS=`egrep -i 'red\ hat|fedora|suse|centos|ubuntu|debian' /etc/issue`
 
 MEMORY_KB=`grep MemTotal: /proc/meminfo|awk '{ print $2 }'`
 MEMORY_MB=`echo $MEMORY_KB / 1024|bc`"M"
