@@ -1,3 +1,0 @@
-#!/bin/sh
-
-rsync -av --delete /home/jayson /data/backups/home
