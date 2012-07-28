@@ -8,7 +8,7 @@ CPU_FREQ=`cat /proc/cpuinfo | grep "cpu MHz" | sort -u|sed 's/[^0-9\.]//g'`
 OS_BIT=`uname -m`
 KERNEL_VERSION=`uname -rsv`
 
-#These are the distros I can test, don't have others installed
+#These are a few possible distros 
 OS=`egrep -i 'red\ hat|fedora|suse|centos|ubuntu|debian' /etc/issue`
 
 MEMORY_KB=`grep MemTotal: /proc/meminfo|awk '{ print $2 }'`
